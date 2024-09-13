@@ -1,5 +1,5 @@
 import React from 'react';
-import LayoutAdmin from './LayoutAdmin/LayoutDashboard';
+import LayoutAdmin from './LayoutDashboard/LayoutDashboard';
 import LayoutCliente from './LayoutCliente/LayoutCliente';
 import LayoutOtros from './LayoutOtros/LayoutOtros';
 

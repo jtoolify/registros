@@ -1,0 +1,18 @@
+.divisorMenuBorder {
+    border-bottom: 1px solid #e2e2e22d;
+    margin: auto 1rem;
+}
+
+.contenedorTituloMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.contenedorTituloMenu h2 {
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+}

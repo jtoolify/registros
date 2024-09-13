@@ -1,0 +1,58 @@
+.contenedorLayoutAdmin {
+    min-height: 100dvh;
+    background-color: #f8f9fc;
+    display: flex;
+  }
+  
+  .contenedorMenuAdmin {
+    width: 250px;
+    height: 100vh;
+    background-color: #4e73df;
+    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    position: fixed;
+    top: 0px;
+    transform: translateX(-100%);
+    z-index: 5;
+  }
+  
+  .contenedorMenuAdmin.toggle {
+    transform: translateX(0%);
+  
+  }
+  
+  
+  .mainAdmin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .header {
+    height: 65px;
+    margin-bottom: 1.5rem ;
+    background-color: #fff;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15);
+    position: sticky;
+    top: 0px;
+  }
+  
+  .footer {
+    margin-top: auto;
+  }
+  
+  
+  @media (max-width: 800px) {
+    .contenedorMenuAdmin {
+        width: 100%;
+        height: calc(100dvh - 65px);
+        top: 65px;
+    }
+  }
+  
+  
+  @media (min-width: 801px) {
+    .mainAdmin.toggle {
+        margin-left: 250px;
+    }
+  }

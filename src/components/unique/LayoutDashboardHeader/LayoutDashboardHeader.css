@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+}
+
+.divisorHeaderBorder {
+    border-right: 1px solid #e3e6f0;
+    height: calc(4.375rem - 2rem);
+    margin: auto 1rem;
+
+}
+.btnMenuAdmin {
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    border: 0px transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btnMenuAdmin img {
+    width: 40%;
+    height: 40%;
+}
+
+.contenedoBtnHeader {
+    margin-left: auto;
+    height: 100%;
+    display: flex;
+}
+
+.contenedorUsuario {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* cursor: pointer; */
+    z-index: 10;
+    padding-right: 15px;
+    padding-left: 15px;
+    user-select: none;
+
+}
+
+.contenedorUsuario span {
+    text-transform: capitalize;
+    margin-right: 15px;
+}
