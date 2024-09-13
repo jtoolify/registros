@@ -1,0 +1,12 @@
+.contenedor-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+}
+
+
+.cl-footer  {
+    display: none !important;
+  }

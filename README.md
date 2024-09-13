@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# base auth - Instrucciones de Configuración
 
-## Getting Started
+## Requisitos previos
 
-First, run the development server:
+1. Asegúrate de tener instalado **Node.js** en tu máquina. Si no lo tienes, puedes descargarlo desde [nodejs.org](https://nodejs.org/).
+
+2. Asegúrate de tener instalado **Git**. Si no lo tienes, puedes descargarlo desde [git-scm.com](https://git-scm.com/).
+
+## Pasos para configurar el proyecto
+
+### 1. Clonar el repositorio
+
+Clona el repositorio en tu máquina local usando Git:
+
+```bash
+git clone https://github.com/jtoolify/base-auth.git
+```
+
+
+### 2. Instalar las dependencias
+
+Accede a la carpeta del proyecto y ejecuta el siguiente comando para instalar las dependencias del proyecto:
+
+```bash
+cd base-auth
+npm install
+```
+
+### 3. Configurar las variables de entorno
+
+Crea un archivo llamado `.env.local` en la raíz del proyecto y agrega las siguientes variables de entorno:
+
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=aqui_se_debe_colocar_la_key
+CLERK_SECRET_KEY=aqui_se_debe_colocar_la_key
+
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/login
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
+```
+
+### 4. Ejecutar la aplicación
+
+Una vez configurado todo, ejecuta la aplicación con el siguiente comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Esto iniciará la aplicación en modo de desarrollo. Normalmente estará disponible en http://localhost:3000.
