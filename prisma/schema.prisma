@@ -1,0 +1,22 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Dispositivo {
+  id               Int      @id @default(autoincrement())
+  tipo             String?  
+  marca            String?
+  modelo           String?
+  numeroDeSerie    String?   
+  fechaAdquisicion DateTime? 
+  estado           String?   
+  ubicacion        String?
+  notas            String?
+}

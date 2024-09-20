@@ -10,7 +10,6 @@ const roboto = Roboto({
 
 const LayoutCliente = ({ children }) => (
   <div className={`${styles.LayoutClienteContenedor} ${roboto.className}`}>
-    <h2>layout de cliente</h2>
     {children}
   </div>
 );
